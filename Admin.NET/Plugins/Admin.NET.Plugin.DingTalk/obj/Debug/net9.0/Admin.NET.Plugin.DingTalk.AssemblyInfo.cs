@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Admin.NET")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Admin.NET 通用权限开发平台")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ee0933320d372a355d5175e16b3088bc005d7c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5871a26f7d0271aca74e214a494e9bbf7092b60")]
 [assembly: System.Reflection.AssemblyProductAttribute("Admin.NET.Plugin.DingTalk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Admin.NET.Plugin.DingTalk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
