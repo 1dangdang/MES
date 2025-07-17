@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Admin.NET")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Admin.NET 通用权限开发平台")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93f0ce872ffe82314a0b8b68955be0b8d3adc97f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4aa975bf346e1dd86378e9213f522e91f5d1334a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Admin.NET.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Admin.NET.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

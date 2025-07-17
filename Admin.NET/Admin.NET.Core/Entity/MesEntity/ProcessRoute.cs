@@ -14,12 +14,13 @@ namespace Admin.NET.Core.Entity.MesEntity;
 /// <summary>
 /// 工艺路线表
 /// </summary>
+
 [SugarTable(null, "工艺路线表")]
 [SysTable]
 public class ProcessRoute : EntityBaseDel
 {
     /// <summary>
-    /// 工艺路线编号
+    /// 工艺路线编号 啊啊啊啊啊啊啊啊
     /// </summary>
     public string ProcessRouteCode { get; set; }
 
