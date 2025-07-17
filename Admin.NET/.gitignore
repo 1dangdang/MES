@@ -1,0 +1,63 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Others
+*.dbmdl
+*.jfm
+
+# Docker
+Dockerfile*
+docker-compose*
+
+# Node
+node_modules/
+npm-debug.log
+
+# Publish output
+publish/
+
+# Sensitive or environment files
+.env
+secrets.dev.yaml
+values.dev.yaml
+
+# Ignore test results
+TestResults/
+
+# Ignore wwwroot logs
+wwwroot/logs/
+
+# Ignore database files
+*.mdf
+*.ldf
+*.ndf
+
+# Ignore backup files
+*.bak
+
+# Ignore ip2region and GeoLite2 database
+*.db
+*.mmdb
+
+# Ignore other project-specific files
+charts/ 

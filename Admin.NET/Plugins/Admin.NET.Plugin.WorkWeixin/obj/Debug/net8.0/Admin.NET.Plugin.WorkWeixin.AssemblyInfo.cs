@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Admin.NET")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Admin.NET 通用权限开发平台")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4aa975bf346e1dd86378e9213f522e91f5d1334a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07fa93d130ca21f4a82674402e29c5d965378677")]
 [assembly: System.Reflection.AssemblyProductAttribute("Admin.NET.Plugin.WorkWeixin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Admin.NET.Plugin.WorkWeixin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

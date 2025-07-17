@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\\u5F00\u53D1\u9879\u76EE\\MES\\Admin.NET\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AD1A3ED-ED11-479D-BE32-6589D98A9ADC}|Admin.NET.Core\\Admin.NET.Core.csproj|d:\\\u5F00\u53D1\u9879\u76EE\\mes\\admin.net\\admin.net.core\\entity\\mesentity\\processroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AD1A3ED-ED11-479D-BE32-6589D98A9ADC}|Admin.NET.Core\\Admin.NET.Core.csproj|solutionrelative:admin.net.core\\entity\\mesentity\\processroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProcessRoute.cs",
+              "DocumentMoniker": "D:\\\u5F00\u53D1\u9879\u76EE\\MES\\Admin.NET\\Admin.NET.Core\\Entity\\MesEntity\\ProcessRoute.cs",
+              "RelativeDocumentMoniker": "Admin.NET.Core\\Entity\\MesEntity\\ProcessRoute.cs",
+              "ToolTip": "D:\\\u5F00\u53D1\u9879\u76EE\\MES\\Admin.NET\\Admin.NET.Core\\Entity\\MesEntity\\ProcessRoute.cs",
+              "RelativeToolTip": "Admin.NET.Core\\Entity\\MesEntity\\ProcessRoute.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T12:31:37.443Z",
+              "EditorCaption": ""
             }
           ]
         }
