@@ -18115,14 +18115,14 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -18333,14 +18333,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -18421,14 +18421,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -18536,14 +18536,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -18663,7 +18663,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createType": {
             "$ref": "#/components/schemas/JobCreateTypeEnum"
@@ -18725,28 +18725,28 @@
             "description": "起始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastRunTime": {
             "type": "string",
             "description": "最近运行时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "nextRunTime": {
             "type": "string",
             "description": "下一次运行时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "numberOfRuns": {
             "type": "integer",
@@ -18795,7 +18795,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "jobId": {
             "minLength": 2,
@@ -18825,14 +18825,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -18973,14 +18973,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19045,14 +19045,14 @@
             "description": "发布时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "cancelTime": {
             "type": "string",
             "description": "撤回时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "status": {
             "$ref": "#/components/schemas/NoticeStatusEnum"
@@ -19077,14 +19077,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19149,14 +19149,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19264,14 +19264,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19349,14 +19349,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19439,14 +19439,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19631,14 +19631,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19723,14 +19723,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19770,7 +19770,7 @@
             "description": "日程日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "startTime": {
             "type": "string",
@@ -19845,14 +19845,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -19960,14 +19960,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -20051,14 +20051,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -20235,14 +20235,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -20302,7 +20302,7 @@
             "description": "出生日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "nation": {
             "maxLength": 32,
@@ -20454,7 +20454,7 @@
             "description": "入职日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastLoginIp": {
             "maxLength": 256,
@@ -20473,7 +20473,7 @@
             "description": "最新登录时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastLoginDevice": {
             "maxLength": 128,
@@ -20541,14 +20541,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -20647,7 +20647,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20683,7 +20683,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20720,7 +20720,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20756,7 +20756,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20792,7 +20792,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20834,7 +20834,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20870,7 +20870,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20906,7 +20906,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20942,7 +20942,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -20978,7 +20978,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21014,7 +21014,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21050,7 +21050,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21086,7 +21086,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21122,7 +21122,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21160,7 +21160,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21198,7 +21198,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21239,7 +21239,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21280,7 +21280,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21321,7 +21321,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21362,7 +21362,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21403,7 +21403,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21444,7 +21444,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21485,7 +21485,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21526,7 +21526,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21567,7 +21567,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21608,7 +21608,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21649,7 +21649,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21690,7 +21690,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21732,7 +21732,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21773,7 +21773,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21814,7 +21814,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21855,7 +21855,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21896,7 +21896,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21937,7 +21937,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -21978,7 +21978,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22019,7 +22019,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22060,7 +22060,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22101,7 +22101,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22142,7 +22142,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22183,7 +22183,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22224,7 +22224,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22265,7 +22265,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22306,7 +22306,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22347,7 +22347,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22388,7 +22388,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22429,7 +22429,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22470,7 +22470,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22511,7 +22511,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22552,7 +22552,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22593,7 +22593,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22634,7 +22634,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22675,7 +22675,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22716,7 +22716,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22757,7 +22757,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22793,7 +22793,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22829,7 +22829,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22867,7 +22867,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22903,7 +22903,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22939,7 +22939,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -22975,7 +22975,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23011,7 +23011,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23047,7 +23047,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23083,7 +23083,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23119,7 +23119,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23155,7 +23155,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23191,7 +23191,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23227,7 +23227,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23263,7 +23263,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23299,7 +23299,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23335,7 +23335,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23371,7 +23371,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23407,7 +23407,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23443,7 +23443,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23479,7 +23479,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23515,7 +23515,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23551,7 +23551,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23587,7 +23587,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23623,7 +23623,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23659,7 +23659,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23695,7 +23695,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23731,7 +23731,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23767,7 +23767,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23803,7 +23803,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23839,7 +23839,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23875,7 +23875,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23913,7 +23913,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23949,7 +23949,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -23985,7 +23985,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24021,7 +24021,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24057,7 +24057,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24093,7 +24093,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24129,7 +24129,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24165,7 +24165,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24201,7 +24201,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24237,7 +24237,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24273,7 +24273,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24309,7 +24309,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24345,7 +24345,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24381,7 +24381,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24417,7 +24417,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24453,7 +24453,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24489,7 +24489,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24525,7 +24525,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24561,7 +24561,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24597,7 +24597,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24633,7 +24633,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24669,7 +24669,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24705,7 +24705,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -24837,14 +24837,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -25011,14 +25011,14 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -25173,7 +25173,7 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false
@@ -25281,13 +25281,13 @@
             "type": "string",
             "format": "date-time",
             "readOnly": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "maxSupportedDateTime": {
             "type": "string",
             "format": "date-time",
             "readOnly": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "algorithmType": {
             "$ref": "#/components/schemas/CalendarAlgorithmType"
@@ -28781,7 +28781,7 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "indexImage": {
             "type": "string",
@@ -28856,7 +28856,7 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "indexImage": {
             "type": "string",
@@ -28925,7 +28925,7 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -28958,7 +28958,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateUserId": {
             "type": "integer",
@@ -29400,13 +29400,13 @@
             "type": "string",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "tenantId": {
             "type": "integer",
@@ -29424,14 +29424,14 @@
             "description": "开始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false
@@ -29479,7 +29479,7 @@
             "description": "日志时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false
@@ -29805,13 +29805,13 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserName": {
             "type": "string",
@@ -29897,7 +29897,7 @@
             "type": "string",
             "description": "发送时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false
@@ -30614,14 +30614,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -30948,14 +30948,14 @@
             "description": "开始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "account": {
             "type": "string",
@@ -31055,14 +31055,14 @@
             "description": "开始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -31221,14 +31221,14 @@
             "description": "开始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "account": {
             "type": "string",
@@ -31410,14 +31410,14 @@
             "description": "开始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "account": {
             "type": "string",
@@ -31973,14 +31973,14 @@
             "description": "开始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "account": {
             "type": "string",
@@ -33977,14 +33977,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -34141,14 +34141,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -34355,14 +34355,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -34444,14 +34444,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -34560,14 +34560,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -34647,14 +34647,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -34799,7 +34799,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -34864,7 +34864,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createType": {
             "$ref": "#/components/schemas/JobCreateTypeEnum"
@@ -34934,28 +34934,28 @@
             "description": "起始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastRunTime": {
             "type": "string",
             "description": "最近运行时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "nextRunTime": {
             "type": "string",
             "description": "下一次运行时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "numberOfRuns": {
             "type": "integer",
@@ -35004,7 +35004,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -35044,14 +35044,14 @@
             "description": "最近运行时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "nextRunTime": {
             "type": "string",
             "description": "下一次运行时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "status": {
             "$ref": "#/components/schemas/TriggerStatus"
@@ -35072,7 +35072,7 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -35100,14 +35100,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -35263,14 +35263,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -35347,14 +35347,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -35455,7 +35455,7 @@
             "description": "日志时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "logLevel": {
             "$ref": "#/components/schemas/LogLevel"
@@ -35537,14 +35537,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -35645,7 +35645,7 @@
             "description": "日志时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "logLevel": {
             "$ref": "#/components/schemas/LogLevel"
@@ -35727,14 +35727,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -35835,7 +35835,7 @@
             "description": "日志时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "logLevel": {
             "$ref": "#/components/schemas/LogLevel"
@@ -35871,14 +35871,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -36054,14 +36054,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -36126,14 +36126,14 @@
             "description": "发布时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "cancelTime": {
             "type": "string",
             "description": "撤回时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "status": {
             "$ref": "#/components/schemas/NoticeStatusEnum"
@@ -36168,7 +36168,7 @@
             "description": "阅读时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "readStatus": {
             "$ref": "#/components/schemas/NoticeUserStatusEnum"
@@ -36221,7 +36221,7 @@
             "description": "连接时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "ip": {
             "maxLength": 256,
@@ -36260,14 +36260,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -36378,14 +36378,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -36465,14 +36465,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -36557,14 +36557,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -36753,14 +36753,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -36838,14 +36838,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -36885,7 +36885,7 @@
             "description": "日程日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "startTime": {
             "type": "string",
@@ -36922,14 +36922,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -37015,14 +37015,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -37094,7 +37094,7 @@
             "description": "出生日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "nation": {
             "maxLength": 32,
@@ -37246,7 +37246,7 @@
             "description": "入职日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastLoginIp": {
             "maxLength": 256,
@@ -37265,7 +37265,7 @@
             "description": "最新登录时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastLoginDevice": {
             "maxLength": 128,
@@ -37323,7 +37323,7 @@
             "description": "入职日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           }
         },
         "additionalProperties": false,
@@ -37376,7 +37376,7 @@
             "description": "最后设置密码时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "mail": {
             "type": "string",
@@ -37418,14 +37418,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -37505,14 +37505,14 @@
             "description": "支付完成时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "expireTime": {
             "type": "string",
             "description": "交易结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "description": {
             "type": "string",
@@ -37604,14 +37604,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -37685,7 +37685,7 @@
             "description": "支完成时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "notifyUrl": {
             "type": "string",
@@ -37716,14 +37716,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -37981,14 +37981,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -39033,14 +39033,14 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -39262,14 +39262,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -39402,14 +39402,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -39517,14 +39517,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -39644,7 +39644,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createType": {
             "$ref": "#/components/schemas/JobCreateTypeEnum"
@@ -39706,28 +39706,28 @@
             "description": "起始时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "endTime": {
             "type": "string",
             "description": "结束时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastRunTime": {
             "type": "string",
             "description": "最近运行时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "nextRunTime": {
             "type": "string",
             "description": "下一次运行时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "numberOfRuns": {
             "type": "integer",
@@ -39776,7 +39776,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "jobId": {
             "minLength": 2,
@@ -39806,14 +39806,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -39954,14 +39954,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40026,14 +40026,14 @@
             "description": "发布时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "cancelTime": {
             "type": "string",
             "description": "撤回时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "status": {
             "$ref": "#/components/schemas/NoticeStatusEnum"
@@ -40058,14 +40058,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40130,14 +40130,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40245,14 +40245,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40330,14 +40330,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40420,14 +40420,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40612,14 +40612,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40704,14 +40704,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40751,7 +40751,7 @@
             "description": "日程日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "startTime": {
             "type": "string",
@@ -40796,14 +40796,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -40907,14 +40907,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -41003,14 +41003,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -41187,14 +41187,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -41254,7 +41254,7 @@
             "description": "出生日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "nation": {
             "maxLength": 32,
@@ -41406,7 +41406,7 @@
             "description": "入职日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastLoginIp": {
             "maxLength": 256,
@@ -41425,7 +41425,7 @@
             "description": "最新登录时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastLoginDevice": {
             "maxLength": 128,
@@ -41489,14 +41489,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -41641,14 +41641,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -41720,7 +41720,7 @@
             "description": "出生日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "nation": {
             "maxLength": 32,
@@ -41872,7 +41872,7 @@
             "description": "入职日期",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastLoginIp": {
             "maxLength": 256,
@@ -41891,7 +41891,7 @@
             "description": "最新登录时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "lastLoginDevice": {
             "maxLength": 128,
@@ -41940,14 +41940,14 @@
             "type": "string",
             "description": "创建时间",
             "format": "date-time",
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "updateTime": {
             "type": "string",
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:45"
+            "example": "2025-07-17 16:20:32"
           },
           "createUserId": {
             "type": "integer",
@@ -42269,7 +42269,7 @@
               "type": "string",
               "format": "date-time",
               "nullable": true,
-              "example": "2025-07-17 16:03:45"
+              "example": "2025-07-17 16:20:32"
             },
             "description": "添加时间范围",
             "nullable": true
