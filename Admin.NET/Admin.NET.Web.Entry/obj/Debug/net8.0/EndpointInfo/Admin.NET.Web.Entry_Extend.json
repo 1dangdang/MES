@@ -128,7 +128,7 @@
             "type": "string",
             "description": "时间",
             "format": "date-time",
-            "example": "2025-07-17 16:20:32"
+            "example": "2025-07-17 16:40:37"
           }
         },
         "additionalProperties": false,
