@@ -26964,24 +26964,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "D:\\vs3\\NuGetPackages": {}
+    "C:\\Users\\13775\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\开发项目\\MES\\Admin.NET\\Admin.NET.Application\\Admin.NET.Application.csproj",
+      "projectUniqueName": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Admin.NET.Application\\Admin.NET.Application.csproj",
       "projectName": "Admin.NET.Application",
-      "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Admin.NET.Application\\Admin.NET.Application.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\开发项目\\MES\\Admin.NET\\Admin.NET.Application\\obj\\",
+      "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Admin.NET.Application\\Admin.NET.Application.csproj",
+      "packagesPath": "C:\\Users\\13775\\.nuget\\packages\\",
+      "outputPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Admin.NET.Application\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
-        "D:\\vs3\\NuGetPackages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\13775\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -26997,34 +26997,34 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\开发项目\\MES\\Admin.NET\\Admin.NET.Core\\Admin.NET.Core.csproj": {
-              "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Admin.NET.Core\\Admin.NET.Core.csproj"
+            "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Admin.NET.Core\\Admin.NET.Core.csproj": {
+              "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Admin.NET.Core\\Admin.NET.Core.csproj"
             },
-            "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.ApprovalFlow\\Admin.NET.Plugin.ApprovalFlow.csproj": {
-              "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.ApprovalFlow\\Admin.NET.Plugin.ApprovalFlow.csproj"
+            "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.ApprovalFlow\\Admin.NET.Plugin.ApprovalFlow.csproj": {
+              "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.ApprovalFlow\\Admin.NET.Plugin.ApprovalFlow.csproj"
             },
-            "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.DingTalk\\Admin.NET.Plugin.DingTalk.csproj": {
-              "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.DingTalk\\Admin.NET.Plugin.DingTalk.csproj"
+            "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.DingTalk\\Admin.NET.Plugin.DingTalk.csproj": {
+              "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.DingTalk\\Admin.NET.Plugin.DingTalk.csproj"
             },
-            "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.GoView\\Admin.NET.Plugin.GoView.csproj": {
-              "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.GoView\\Admin.NET.Plugin.GoView.csproj"
+            "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.GoView\\Admin.NET.Plugin.GoView.csproj": {
+              "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.GoView\\Admin.NET.Plugin.GoView.csproj"
             }
           }
         },
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\开发项目\\MES\\Admin.NET\\Admin.NET.Core\\Admin.NET.Core.csproj": {
-              "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Admin.NET.Core\\Admin.NET.Core.csproj"
+            "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Admin.NET.Core\\Admin.NET.Core.csproj": {
+              "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Admin.NET.Core\\Admin.NET.Core.csproj"
             },
-            "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.ApprovalFlow\\Admin.NET.Plugin.ApprovalFlow.csproj": {
-              "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.ApprovalFlow\\Admin.NET.Plugin.ApprovalFlow.csproj"
+            "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.ApprovalFlow\\Admin.NET.Plugin.ApprovalFlow.csproj": {
+              "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.ApprovalFlow\\Admin.NET.Plugin.ApprovalFlow.csproj"
             },
-            "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.DingTalk\\Admin.NET.Plugin.DingTalk.csproj": {
-              "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.DingTalk\\Admin.NET.Plugin.DingTalk.csproj"
+            "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.DingTalk\\Admin.NET.Plugin.DingTalk.csproj": {
+              "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.DingTalk\\Admin.NET.Plugin.DingTalk.csproj"
             },
-            "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.GoView\\Admin.NET.Plugin.GoView.csproj": {
-              "projectPath": "D:\\开发项目\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.GoView\\Admin.NET.Plugin.GoView.csproj"
+            "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.GoView\\Admin.NET.Plugin.GoView.csproj": {
+              "projectPath": "D:\\应用软件\\资料\\实训一\\MES\\Admin.NET\\Plugins\\Admin.NET.Plugin.GoView\\Admin.NET.Plugin.GoView.csproj"
             }
           }
         }
@@ -27055,12 +27055,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.18, 8.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.18, 8.0.18]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.18, 8.0.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       },
       "net9.0": {
         "targetAlias": "net9.0",
@@ -27080,7 +27094,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -725,7 +725,7 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:44"
+            "example": "2025-07-17 16:38:19"
           },
           "indexImage": {
             "type": "string",
@@ -800,7 +800,7 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:44"
+            "example": "2025-07-17 16:38:19"
           },
           "indexImage": {
             "type": "string",
@@ -869,7 +869,7 @@
             "description": "创建时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:44"
+            "example": "2025-07-17 16:38:19"
           },
           "createUserId": {
             "type": "integer",
@@ -902,7 +902,7 @@
             "description": "更新时间",
             "format": "date-time",
             "nullable": true,
-            "example": "2025-07-17 16:03:44"
+            "example": "2025-07-17 16:38:19"
           },
           "updateUserId": {
             "type": "integer",

@@ -893,6 +893,236 @@
             机构Id
             </summary>
         </member>
+        <member name="T:Admin.NET.Core.Entity.MesEntity.ProcessRoute">
+            <summary>
+            工艺路线表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.ProcessRouteCode">
+            <summary>
+            工艺路线编号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.IsSystemCode">
+            <summary>
+            系统编号开关状态
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.ProcessRouteName">
+            <summary>
+            工艺路线名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.Status">
+            <summary>
+            工艺路线状态
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.Description">
+            <summary>
+            工艺路线的说明信息，对应表单中的说明输入框
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.Remarks">
+            <summary>
+            工艺路线的备注信息，对应表单中的备注输入框
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.ProcessSteps">
+            <summary>
+            工序步骤
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.Products">
+            <summary>
+            产品
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Core.Entity.MesEntity.ProcessStep">
+            <summary>
+            工序管理
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessStep.ProcessStepId">
+            <summary>
+            工序主键Id
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Core.Entity.MesEntity.Product">
+            <summary>
+            产品管理表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ProductCode">
+            <summary>
+            产品编号（唯一标识）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.IsSystemCode">
+            <summary>
+            是否设置系统编号（0/1）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ProductName">
+            <summary>
+            产品名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.Specification">
+            <summary>
+            产品规格型号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.Unit">
+            <summary>
+            产品计量单位（个/件/箱等）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ProductType">
+            <summary>
+            产品类型（下拉选项值）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ProductAttribute">
+            <summary>
+            产品属性（下拉选项值）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ProductCategory">
+            <summary>
+            产品分类（下拉选项值）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.Status">
+            <summary>
+            产品状态（启用/禁用）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ValidPeriodValue">
+            <summary>
+            有效期限数值
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ValidPeriodUnit">
+            <summary>
+            有效期限单位（天/月/年）
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.AlarmDays">
+            <summary>
+            有效期预警天数
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.StockUpperLimit">
+            <summary>
+            库存上限
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.StockLowerLimit">
+            <summary>
+            库存下限
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.PurchasePrice">
+            <summary>
+            产品采购价格
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.SalesPrice">
+            <summary>
+            产品销售价格
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.Remarks">
+            <summary>
+            产品备注信息
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ProductImage">
+            <summary>
+            产品图片存储路径
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Core.Entity.MesEntity.ProductionLine">
+            <summary>
+            生产线管理表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.ProductionLineId">
+            <summary>
+            生产线管理主键Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.ProductionLineCode">
+            <summary>
+            生产线编号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.ProductionLineName">
+            <summary>
+            生产线名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.ProductionLineType">
+            <summary>
+            生产线类型
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.WorkShopId">
+            <summary>
+            所在车间
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.Remarks">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:Admin.NET.Core.Entity.MesEntity.WorkShop">
+            <summary>
+            车间管理表
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.WorkShopId">
+            <summary>
+            车间管理主键Id
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.WorkShopCode">
+            <summary>
+            车间编号
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.WorkShopName">
+            <summary>
+            车间名称
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.WorkShopArea">
+            <summary>
+            车间面积
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.WorkshopPerson">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.Remarks">
+            <summary>
+            备注
+            </summary>
+        </member>
         <member name="T:Admin.NET.Core.SysAlipayAuthInfo">
             <summary>
             支付宝授权记录表
