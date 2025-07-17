@@ -20,7 +20,7 @@ public class Product : EntityBaseDel
 {
 
     /// <summary>
-    /// 产品编号（唯一标识）
+    /// 产品编号（唯一标识）312312213
     /// </summary>
     public string ProductCode { get; set; }
 

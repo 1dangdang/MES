@@ -19,7 +19,7 @@ namespace Admin.NET.Core.Entity.MesEntity;
 public class ProductionLine
 {
     /// <summary>
-    /// 生产线管理主键Id
+    /// 生产线管理主键Id123312123
     /// </summary>
     public int ProductionLineId { get; set; }
 

@@ -900,7 +900,7 @@
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.ProcessRouteCode">
             <summary>
-            工艺路线编号
+            工艺路线编号 啊啊啊啊啊啊啊啊
             </summary>
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessRoute.IsSystemCode">
@@ -945,7 +945,7 @@
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.ProcessStep.ProcessStepId">
             <summary>
-            工序主键Id
+            工序主键Id213231213
             </summary>
         </member>
         <member name="T:Admin.NET.Core.Entity.MesEntity.Product">
@@ -955,7 +955,7 @@
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.Product.ProductCode">
             <summary>
-            产品编号（唯一标识）
+            产品编号（唯一标识）312312213
             </summary>
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.Product.IsSystemCode">
@@ -1050,7 +1050,7 @@
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.ProductionLineId">
             <summary>
-            生产线管理主键Id
+            生产线管理主键Id123312123
             </summary>
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.ProductionLine.ProductionLineCode">
@@ -1090,7 +1090,7 @@
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.WorkShopId">
             <summary>
-            车间管理主键Id
+            车间管理主键Id13212321331
             </summary>
         </member>
         <member name="P:Admin.NET.Core.Entity.MesEntity.WorkShop.WorkShopCode">
