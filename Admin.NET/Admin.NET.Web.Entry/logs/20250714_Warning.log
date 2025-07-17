@@ -1,0 +1,91 @@
+fail: 2025-07-14 20:30:10.5102859 +08:00 Monday L System.Logging.StringLogging[0] #42 '00-169b52c53a95fd4fd4dc15209d11de2e-6e3fc2a5d5e1f46c-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      用户密码验证异常：      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 126
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 141
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GMUtil.cs:line 59
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.CryptogramUtil.Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 52
+         at Admin.NET.Core.Service.SysAuthService.VerifyPassword(String password, String keyPasswordErrorTimes, Int32 passwordErrorTimes, SysUser user) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 158
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-14 20:30:24.3714110 +08:00 Monday L System.Logging.StringLogging[0] #36 '00-1caacb9d28beb36964c8db1591a7cda9-b2ad54049f284a12-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      用户密码验证异常：      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 126
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 141
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GMUtil.cs:line 59
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.CryptogramUtil.Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 52
+         at Admin.NET.Core.Service.SysAuthService.VerifyPassword(String password, String keyPasswordErrorTimes, Int32 passwordErrorTimes, SysUser user) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 158
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-14 20:30:24.9348695 +08:00 Monday L System.Logging.StringLogging[0] #36 '00-a3e12e1711aa47bede7df6ee32e1e658-15067e26136c74f4-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      用户密码验证异常：      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 126
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 141
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GMUtil.cs:line 59
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.CryptogramUtil.Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 52
+         at Admin.NET.Core.Service.SysAuthService.VerifyPassword(String password, String keyPasswordErrorTimes, Int32 passwordErrorTimes, SysUser user) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 158
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-14 20:30:25.0888089 +08:00 Monday L System.Logging.StringLogging[0] #36 '00-15ef76244c650fdce613014724d09ebd-eb97704e62076695-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      用户密码验证异常：      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 126
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 141
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GMUtil.cs:line 59
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.CryptogramUtil.Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 52
+         at Admin.NET.Core.Service.SysAuthService.VerifyPassword(String password, String keyPasswordErrorTimes, Int32 passwordErrorTimes, SysUser user) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 158
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-14 20:30:25.2924066 +08:00 Monday L System.Logging.StringLogging[0] #38 '00-567a18231be9bef70c0f6b7ff9060f01-48718bbbbcd9f3e3-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      用户密码验证异常：      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 126
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 141
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GMUtil.cs:line 59
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.CryptogramUtil.Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 52
+         at Admin.NET.Core.Service.SysAuthService.VerifyPassword(String password, String keyPasswordErrorTimes, Int32 passwordErrorTimes, SysUser user) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 158
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-14 20:30:25.5279782 +08:00 Monday L System.Logging.StringLogging[0] #39 '00-634c904a490345d0903285e0c2896c41-f8d6a1f5d2fe2f9a-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      用户密码验证异常：      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 126
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 141
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GMUtil.cs:line 59
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.CryptogramUtil.Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 52
+         at Admin.NET.Core.Service.SysAuthService.VerifyPassword(String password, String keyPasswordErrorTimes, Int32 passwordErrorTimes, SysUser user) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 158
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-14 20:30:25.7520983 +08:00 Monday L System.Logging.StringLogging[0] #18 '00-e641d8a79a9d313f60595c8b795b37e0-6016e16ec79d8285-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      用户密码验证异常：      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+         at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+         at Admin.NET.Core.GM.ChangeC1C3C2ToC1C2C3(Byte[] c1c3c2) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 126
+         at Admin.NET.Core.GM.Sm2Decrypt(Byte[] data, AsymmetricKeyParameter key) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GM.cs:line 141
+         at Admin.NET.Core.GMUtil.SM2Decrypt(String privateKey_string, String encryptedData_string) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\GM\GMUtil.cs:line 59
+         at Admin.NET.Core.CryptogramUtil.SM2Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 78
+         at Admin.NET.Core.CryptogramUtil.Decrypt(String cipherText) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Utils\CryptogramUtil.cs:line 52
+         at Admin.NET.Core.Service.SysAuthService.VerifyPassword(String password, String keyPasswordErrorTimes, Int32 passwordErrorTimes, SysUser user) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\Auth\SysAuthService.cs:line 158
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

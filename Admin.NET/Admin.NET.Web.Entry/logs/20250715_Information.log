@@ -1,0 +1,900 @@
+fail: 2025-07-15 15:11:16.2646853 +08:00 Tuesday L System.Logging.StringLogging[0] #43 '00-88d7a92f33ae7f64c9f21b0dc8c86eba-c09c7f452e24a93f-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      【2025/7/15 15:11:16——错误SQL】
+      
+      [Sql]:INSERT INTO `SysUserLdap`  
+                 (`UserId`,`Account`,`UserName`,`EmployeeId`,`DeptCode`,`PwdLastSetTime`,`Mail`,`AccountExpiresFlag`,`DontExpiresFlag`,`Dn`,`TenantId`,`Id`)
+           VALUES
+                 (@UserId,@Account,@UserName,@EmployeeId,@DeptCode,@PwdLastSetTime,@Mail,@AccountExpiresFlag,@DontExpiresFlag,@Dn,@TenantId,@Id) ; 
+      [Pars]:
+      [Name]:@UserId [Value]:697951331008581 [Type]:Int64    
+      [Name]:@Account [Value]:345345 [Type]:String    
+      [Name]:@UserName [Value]: [Type]:String    
+      [Name]:@EmployeeId [Value]:jinxueli [Type]:String    
+      [Name]:@DeptCode [Value]: [Type]:String    
+      [Name]:@PwdLastSetTime [Value]: [Type]:DateTime    
+      [Name]:@Mail [Value]: [Type]:String    
+      [Name]:@AccountExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@DontExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@Dn [Value]: [Type]:String    
+      [Name]:@TenantId [Value]:1300000000001 [Type]:Int64    
+      [Name]:@Id [Value]:697951331237957 [Type]:Int64    
+      
+            
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Column 'UserName' cannot be null
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:11:16.4704639 +08:00 Tuesday L System.Logging.UnitOfWork[0] #43 '00-88d7a92f33ae7f64c9f21b0dc8c86eba-c09c7f452e24a93f-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      [Database Transaction] Transaction rolled back due to an error.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:11:16.6563337 +08:00 Tuesday L System.Logging.LoggingMonitor[0] #43 '00-88d7a92f33ae7f64c9f21b0dc8c86eba-c09c7f452e24a93f-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysUserService.AddUser
+      ┣ 
+      ┣ 控制器名称：                     SysUserService
+      ┣ 操作名称：                       AddUser
+      ┣ 显示名称：                       增加用户
+      ┣ 路由信息：                       [area]: ; [controller]: sysUser; [action]: add
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/api/sysUser/add
+      ┣ HTTP 协议：                      HTTP/1.1
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 0.0.0.1
+      ┣ 客户端源端口：                   59571
+      ┣ 服务端 IP 地址：                 0.0.0.1
+      ┣ 服务端源端口：                   5005
+      ┣ 客户端连接 ID：                  00-88d7a92f33ae7f64c9f21b0dc8c86eba-c09c7f452e24a93f-00
+      ┣ 服务线程 ID：                    #36
+      ┣ 执行耗时：                       738ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.22631
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v4.9.7.93
+      ┣ .NET 架构：                      .NET 8.0.17
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ Web 启动地址：                   http://[::]:5005
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ nbf (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ exp (integer64)：                1753168198 (2025-07-22 15:09:58:0000(+08:00) Tuesday L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ Origin：                         http://localhost:8888
+      ┣ Referer：                        http://localhost:8888/
+      ┣ Content-Length：                 341
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua：                      "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ 
+      ┣ input (AddUserInput)：           {"account":"jinxueli","realName":"金雪丽","domainAccount":"345345","roleIdList":null,"extOrgIdList":[],"nickName":"铜学历","avatar":null,"sex":1,"age":0,"birthday":"2000-01-01T00:00:00+08:00","nation":null,"phone":"1299281922","cardType":0,"idCardNum":null,"email":"2698997479@qq.com","address":null,"cultureLevel":5,"politicalOutlook":null,"college":null,"officePhone":null,"emergencyContact":null,"emergencyPhone":null,"emergencyAddress":null,"introduction":null,"orderNo":100,"status":1,"remark":null,"accountType":777,"sysOrg":null,"managerUserId":null,"posId":1300000000108,"jobNum":"009","posLevel":null,"posTitle":null,"expertise":null,"officeZone":null,"office":null,"joinDate":"2025-07-03T00:00:00+08:00","lastLoginIp":null,"lastLoginAddress":null,"lastLoginTime":null,"lastLoginDevice":null,"signature":null,"tenantId":null,"orgId":1300000000004,"createTime":"0001-01-01T00:00:00","updateTime":null,"createUserId":null,"createUserName":null,"updateUserId":null,"updateUserName":null,"id":697951331008581}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'UserName' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:11:28.1170644 +08:00 Tuesday L System.Logging.StringLogging[0] #38 '00-0150d2257236dd88638e7c15f8aede50-d8ce14e1caec8b14-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      【2025/7/15 15:11:28——错误SQL】
+      
+      [Sql]:INSERT INTO `SysUserLdap`  
+                 (`UserId`,`Account`,`UserName`,`EmployeeId`,`DeptCode`,`PwdLastSetTime`,`Mail`,`AccountExpiresFlag`,`DontExpiresFlag`,`Dn`,`TenantId`,`Id`)
+           VALUES
+                 (@UserId,@Account,@UserName,@EmployeeId,@DeptCode,@PwdLastSetTime,@Mail,@AccountExpiresFlag,@DontExpiresFlag,@Dn,@TenantId,@Id) ; 
+      [Pars]:
+      [Name]:@UserId [Value]:697951379660869 [Type]:Int64    
+      [Name]:@Account [Value]:345345 [Type]:String    
+      [Name]:@UserName [Value]: [Type]:String    
+      [Name]:@EmployeeId [Value]:jinxueli [Type]:String    
+      [Name]:@DeptCode [Value]: [Type]:String    
+      [Name]:@PwdLastSetTime [Value]: [Type]:DateTime    
+      [Name]:@Mail [Value]: [Type]:String    
+      [Name]:@AccountExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@DontExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@Dn [Value]: [Type]:String    
+      [Name]:@TenantId [Value]:1300000000001 [Type]:Int64    
+      [Name]:@Id [Value]:697951379828805 [Type]:Int64    
+      
+            
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Column 'UserName' cannot be null
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:11:28.2714628 +08:00 Tuesday L System.Logging.UnitOfWork[0] #38 '00-0150d2257236dd88638e7c15f8aede50-d8ce14e1caec8b14-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      [Database Transaction] Transaction rolled back due to an error.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:11:28.5153163 +08:00 Tuesday L System.Logging.LoggingMonitor[0] #38 '00-0150d2257236dd88638e7c15f8aede50-d8ce14e1caec8b14-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysUserService.AddUser
+      ┣ 
+      ┣ 控制器名称：                     SysUserService
+      ┣ 操作名称：                       AddUser
+      ┣ 显示名称：                       增加用户
+      ┣ 路由信息：                       [area]: ; [controller]: sysUser; [action]: add
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/api/sysUser/add
+      ┣ HTTP 协议：                      HTTP/1.1
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 0.0.0.1
+      ┣ 客户端源端口：                   59608
+      ┣ 服务端 IP 地址：                 0.0.0.1
+      ┣ 服务端源端口：                   5005
+      ┣ 客户端连接 ID：                  00-0150d2257236dd88638e7c15f8aede50-d8ce14e1caec8b14-00
+      ┣ 服务线程 ID：                    #43
+      ┣ 执行耗时：                       460ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.22631
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v4.9.7.93
+      ┣ .NET 架构：                      .NET 8.0.17
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ Web 启动地址：                   http://[::]:5005
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ nbf (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ exp (integer64)：                1753168198 (2025-07-22 15:09:58:0000(+08:00) Tuesday L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ Origin：                         http://localhost:8888
+      ┣ Referer：                        http://localhost:8888/
+      ┣ Content-Length：                 341
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua：                      "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ 
+      ┣ input (AddUserInput)：           {"account":"jinxueli","realName":"金雪丽","domainAccount":"345345","roleIdList":null,"extOrgIdList":[],"nickName":"铜学历","avatar":null,"sex":1,"age":0,"birthday":"2000-01-01T00:00:00+08:00","nation":null,"phone":"1299281922","cardType":0,"idCardNum":null,"email":"2698997479@qq.com","address":null,"cultureLevel":5,"politicalOutlook":null,"college":null,"officePhone":null,"emergencyContact":null,"emergencyPhone":null,"emergencyAddress":null,"introduction":null,"orderNo":100,"status":1,"remark":null,"accountType":777,"sysOrg":null,"managerUserId":null,"posId":1300000000108,"jobNum":"009","posLevel":null,"posTitle":null,"expertise":null,"officeZone":null,"office":null,"joinDate":"2025-07-03T00:00:00+08:00","lastLoginIp":null,"lastLoginAddress":null,"lastLoginTime":null,"lastLoginDevice":null,"signature":null,"tenantId":null,"orgId":1300000000004,"createTime":"0001-01-01T00:00:00","updateTime":null,"createUserId":null,"createUserName":null,"updateUserId":null,"updateUserName":null,"id":697951379660869}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'UserName' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:13:48.7090356 +08:00 Tuesday L System.Logging.StringLogging[0] #22 '00-0636e8905b14d8542fe776d9b1a2ad10-d46dcccaa938e27e-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      【2025/7/15 15:13:48——错误SQL】
+      
+      [Sql]:INSERT INTO `SysUserLdap`  
+                 (`UserId`,`Account`,`UserName`,`EmployeeId`,`DeptCode`,`PwdLastSetTime`,`Mail`,`AccountExpiresFlag`,`DontExpiresFlag`,`Dn`,`TenantId`,`Id`)
+           VALUES
+                 (@UserId,@Account,@UserName,@EmployeeId,@DeptCode,@PwdLastSetTime,@Mail,@AccountExpiresFlag,@DontExpiresFlag,@Dn,@TenantId,@Id) ; 
+      [Pars]:
+      [Name]:@UserId [Value]:697951955533893 [Type]:Int64    
+      [Name]:@Account [Value]:345345 [Type]:String    
+      [Name]:@UserName [Value]: [Type]:String    
+      [Name]:@EmployeeId [Value]:jinxueli [Type]:String    
+      [Name]:@DeptCode [Value]: [Type]:String    
+      [Name]:@PwdLastSetTime [Value]: [Type]:DateTime    
+      [Name]:@Mail [Value]: [Type]:String    
+      [Name]:@AccountExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@DontExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@Dn [Value]: [Type]:String    
+      [Name]:@TenantId [Value]:1300000000001 [Type]:Int64    
+      [Name]:@Id [Value]:697951955697733 [Type]:Int64    
+      
+            
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Column 'UserName' cannot be null
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:13:48.8070671 +08:00 Tuesday L System.Logging.UnitOfWork[0] #22 '00-0636e8905b14d8542fe776d9b1a2ad10-d46dcccaa938e27e-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      [Database Transaction] Transaction rolled back due to an error.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:13:48.9714997 +08:00 Tuesday L System.Logging.LoggingMonitor[0] #22 '00-0636e8905b14d8542fe776d9b1a2ad10-d46dcccaa938e27e-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysUserService.AddUser
+      ┣ 
+      ┣ 控制器名称：                     SysUserService
+      ┣ 操作名称：                       AddUser
+      ┣ 显示名称：                       增加用户
+      ┣ 路由信息：                       [area]: ; [controller]: sysUser; [action]: add
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/api/sysUser/add
+      ┣ HTTP 协议：                      HTTP/1.1
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 0.0.0.1
+      ┣ 客户端源端口：                   59860
+      ┣ 服务端 IP 地址：                 0.0.0.1
+      ┣ 服务端源端口：                   5005
+      ┣ 客户端连接 ID：                  00-0636e8905b14d8542fe776d9b1a2ad10-d46dcccaa938e27e-00
+      ┣ 服务线程 ID：                    #41
+      ┣ 执行耗时：                       350ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.22631
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v4.9.7.93
+      ┣ .NET 架构：                      .NET 8.0.17
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ Web 启动地址：                   http://[::]:5005
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ nbf (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ exp (integer64)：                1753168198 (2025-07-22 15:09:58:0000(+08:00) Tuesday L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ Origin：                         http://localhost:8888
+      ┣ Referer：                        http://localhost:8888/
+      ┣ Content-Length：                 549
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua：                      "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ 
+      ┣ input (AddUserInput)：           {"account":"jinxueli","realName":"金雪丽","domainAccount":"345345","roleIdList":null,"extOrgIdList":[],"nickName":"铜学历","avatar":null,"sex":1,"age":22,"birthday":"2000-01-01T00:00:00+08:00","nation":"4","phone":"1299281922","cardType":0,"idCardNum":"388282833222919111","email":"2698997479@qq.com","address":"12313123","cultureLevel":5,"politicalOutlook":"123123","college":"123123","officePhone":"19299182922","emergencyContact":"123123","emergencyPhone":"19288122211","emergencyAddress":null,"introduction":null,"orderNo":100,"status":1,"remark":null,"accountType":777,"sysOrg":null,"managerUserId":null,"posId":1300000000108,"jobNum":"009","posLevel":null,"posTitle":null,"expertise":null,"officeZone":null,"office":null,"joinDate":"2025-07-03T00:00:00+08:00","lastLoginIp":null,"lastLoginAddress":null,"lastLoginTime":null,"lastLoginDevice":null,"signature":null,"tenantId":null,"orgId":1300000000004,"createTime":"0001-01-01T00:00:00","updateTime":null,"createUserId":null,"createUserName":null,"updateUserId":null,"updateUserName":null,"id":697951955533893}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'UserName' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:15:55.5168215 +08:00 Tuesday L System.Logging.StringLogging[0] #40 '00-6964a67f7ca8901eb8716474a49f1bf2-e856a221e4c2f11d-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      【2025/7/15 15:15:55——错误SQL】
+      
+      [Sql]:INSERT INTO `SysUserLdap`  
+                 (`UserId`,`Account`,`UserName`,`EmployeeId`,`DeptCode`,`PwdLastSetTime`,`Mail`,`AccountExpiresFlag`,`DontExpiresFlag`,`Dn`,`TenantId`,`Id`)
+           VALUES
+                 (@UserId,@Account,@UserName,@EmployeeId,@DeptCode,@PwdLastSetTime,@Mail,@AccountExpiresFlag,@DontExpiresFlag,@Dn,@TenantId,@Id) ; 
+      [Pars]:
+      [Name]:@UserId [Value]:697952465428549 [Type]:Int64    
+      [Name]:@Account [Value]:345345 [Type]:String    
+      [Name]:@UserName [Value]: [Type]:String    
+      [Name]:@EmployeeId [Value]:jinxueli [Type]:String    
+      [Name]:@DeptCode [Value]: [Type]:String    
+      [Name]:@PwdLastSetTime [Value]: [Type]:DateTime    
+      [Name]:@Mail [Value]: [Type]:String    
+      [Name]:@AccountExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@DontExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@Dn [Value]: [Type]:String    
+      [Name]:@TenantId [Value]:1300000000001 [Type]:Int64    
+      [Name]:@Id [Value]:697952475099205 [Type]:Int64    
+      
+            
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Column 'UserName' cannot be null
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:15:55.6959015 +08:00 Tuesday L System.Logging.UnitOfWork[0] #40 '00-6964a67f7ca8901eb8716474a49f1bf2-e856a221e4c2f11d-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      [Database Transaction] Transaction rolled back due to an error.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:15:55.8903728 +08:00 Tuesday L System.Logging.LoggingMonitor[0] #40 '00-6964a67f7ca8901eb8716474a49f1bf2-e856a221e4c2f11d-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysUserService.AddUser
+      ┣ 
+      ┣ 控制器名称：                     SysUserService
+      ┣ 操作名称：                       AddUser
+      ┣ 显示名称：                       增加用户
+      ┣ 路由信息：                       [area]: ; [controller]: sysUser; [action]: add
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/api/sysUser/add
+      ┣ HTTP 协议：                      HTTP/1.1
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 0.0.0.1
+      ┣ 客户端源端口：                   59976
+      ┣ 服务端 IP 地址：                 0.0.0.1
+      ┣ 服务端源端口：                   5005
+      ┣ 客户端连接 ID：                  00-6964a67f7ca8901eb8716474a49f1bf2-e856a221e4c2f11d-00
+      ┣ 服务线程 ID：                    #22
+      ┣ 执行耗时：                       63658ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.22631
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v4.9.7.93
+      ┣ .NET 架构：                      .NET 8.0.17
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ Web 启动地址：                   http://[::]:5005
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ nbf (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ exp (integer64)：                1753168198 (2025-07-22 15:09:58:0000(+08:00) Tuesday L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ Origin：                         http://localhost:8888
+      ┣ Referer：                        http://localhost:8888/
+      ┣ Content-Length：                 549
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua：                      "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ 
+      ┣ input (AddUserInput)：           {"account":"jinxueli","realName":"金雪丽","domainAccount":"345345","roleIdList":null,"extOrgIdList":[],"nickName":"铜学历","avatar":null,"sex":1,"age":22,"birthday":"2000-01-01T00:00:00+08:00","nation":"4","phone":"1299281922","cardType":0,"idCardNum":"388282833222919111","email":"2698997479@qq.com","address":"12313123","cultureLevel":5,"politicalOutlook":"123123","college":"123123","officePhone":"19299182922","emergencyContact":"123123","emergencyPhone":"19288122211","emergencyAddress":null,"introduction":null,"orderNo":100,"status":1,"remark":null,"accountType":777,"sysOrg":null,"managerUserId":null,"posId":1300000000108,"jobNum":"009","posLevel":null,"posTitle":null,"expertise":null,"officeZone":null,"office":null,"joinDate":"2025-07-03T00:00:00+08:00","lastLoginIp":null,"lastLoginAddress":null,"lastLoginTime":null,"lastLoginDevice":null,"signature":null,"tenantId":null,"orgId":1300000000004,"createTime":"0001-01-01T00:00:00","updateTime":null,"createUserId":null,"createUserName":null,"updateUserId":null,"updateUserName":null,"id":697952465428549}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'UserName' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:16:18.4815982 +08:00 Tuesday L System.Logging.StringLogging[0] #44 '00-15e04cbaaef44cd04c56e1fb60b214e8-b04c10aa2d02a2a7-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      【2025/7/15 15:16:18——错误SQL】
+      
+      [Sql]:INSERT INTO `SysUserLdap`  
+                 (`UserId`,`Account`,`UserName`,`EmployeeId`,`DeptCode`,`PwdLastSetTime`,`Mail`,`AccountExpiresFlag`,`DontExpiresFlag`,`Dn`,`TenantId`,`Id`)
+           VALUES
+                 (@UserId,@Account,@UserName,@EmployeeId,@DeptCode,@PwdLastSetTime,@Mail,@AccountExpiresFlag,@DontExpiresFlag,@Dn,@TenantId,@Id) ; 
+      [Pars]:
+      [Name]:@UserId [Value]:697952564392005 [Type]:Int64    
+      [Name]:@Account [Value]:345345 [Type]:String    
+      [Name]:@UserName [Value]: [Type]:String    
+      [Name]:@EmployeeId [Value]:jinxueli [Type]:String    
+      [Name]:@DeptCode [Value]: [Type]:String    
+      [Name]:@PwdLastSetTime [Value]: [Type]:DateTime    
+      [Name]:@Mail [Value]: [Type]:String    
+      [Name]:@AccountExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@DontExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@Dn [Value]: [Type]:String    
+      [Name]:@TenantId [Value]:1300000000001 [Type]:Int64    
+      [Name]:@Id [Value]:697952569167941 [Type]:Int64    
+      
+            
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Column 'UserName' cannot be null
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:16:18.5787664 +08:00 Tuesday L System.Logging.UnitOfWork[0] #44 '00-15e04cbaaef44cd04c56e1fb60b214e8-b04c10aa2d02a2a7-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      [Database Transaction] Transaction rolled back due to an error.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:16:18.6975321 +08:00 Tuesday L System.Logging.LoggingMonitor[0] #44 '00-15e04cbaaef44cd04c56e1fb60b214e8-b04c10aa2d02a2a7-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysUserService.AddUser
+      ┣ 
+      ┣ 控制器名称：                     SysUserService
+      ┣ 操作名称：                       AddUser
+      ┣ 显示名称：                       增加用户
+      ┣ 路由信息：                       [area]: ; [controller]: sysUser; [action]: add
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/api/sysUser/add
+      ┣ HTTP 协议：                      HTTP/1.1
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 0.0.0.1
+      ┣ 客户端源端口：                   60129
+      ┣ 服务端 IP 地址：                 0.0.0.1
+      ┣ 服务端源端口：                   5005
+      ┣ 客户端连接 ID：                  00-15e04cbaaef44cd04c56e1fb60b214e8-b04c10aa2d02a2a7-00
+      ┣ 服务线程 ID：                    #38
+      ┣ 执行耗时：                       3998ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.22631
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v4.9.7.93
+      ┣ .NET 架构：                      .NET 8.0.17
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ Web 启动地址：                   http://[::]:5005
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ nbf (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ exp (integer64)：                1753168198 (2025-07-22 15:09:58:0000(+08:00) Tuesday L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ Origin：                         http://localhost:8888
+      ┣ Referer：                        http://localhost:8888/
+      ┣ Content-Length：                 549
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua：                      "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ 
+      ┣ input (AddUserInput)：           {"account":"jinxueli","realName":"金雪丽","domainAccount":"345345","roleIdList":null,"extOrgIdList":[],"nickName":"铜学历","avatar":null,"sex":1,"age":22,"birthday":"2000-01-01T00:00:00+08:00","nation":"4","phone":"1299281922","cardType":0,"idCardNum":"388282833222919111","email":"2698997479@qq.com","address":"12313123","cultureLevel":5,"politicalOutlook":"123123","college":"123123","officePhone":"19299182922","emergencyContact":"123123","emergencyPhone":"19288122211","emergencyAddress":null,"introduction":null,"orderNo":100,"status":1,"remark":null,"accountType":777,"sysOrg":null,"managerUserId":null,"posId":1300000000108,"jobNum":"009","posLevel":null,"posTitle":null,"expertise":null,"officeZone":null,"office":null,"joinDate":"2025-07-03T00:00:00+08:00","lastLoginIp":null,"lastLoginAddress":null,"lastLoginTime":null,"lastLoginDevice":null,"signature":null,"tenantId":null,"orgId":1300000000004,"createTime":"0001-01-01T00:00:00","updateTime":null,"createUserId":null,"createUserName":null,"updateUserId":null,"updateUserName":null,"id":697952564392005}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'UserName' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:17:22.8083521 +08:00 Tuesday L System.Logging.StringLogging[0] #44 '00-c65bdbe9f85308a094aa44d9d97a548e-c23bf5f41776fa54-00'
+      [Furion.Pure.dll] void Furion.Logging.StringLoggingPart.LogError()
+      【2025/7/15 15:17:22——错误SQL】
+      
+      [Sql]:INSERT INTO `SysUserLdap`  
+                 (`UserId`,`Account`,`UserName`,`EmployeeId`,`DeptCode`,`PwdLastSetTime`,`Mail`,`AccountExpiresFlag`,`DontExpiresFlag`,`Dn`,`TenantId`,`Id`)
+           VALUES
+                 (@UserId,@Account,@UserName,@EmployeeId,@DeptCode,@PwdLastSetTime,@Mail,@AccountExpiresFlag,@DontExpiresFlag,@Dn,@TenantId,@Id) ; 
+      [Pars]:
+      [Name]:@UserId [Value]:697952644661317 [Type]:Int64    
+      [Name]:@Account [Value]:345345 [Type]:String    
+      [Name]:@UserName [Value]: [Type]:String    
+      [Name]:@EmployeeId [Value]:jinxueli [Type]:String    
+      [Name]:@DeptCode [Value]: [Type]:String    
+      [Name]:@PwdLastSetTime [Value]: [Type]:DateTime    
+      [Name]:@Mail [Value]: [Type]:String    
+      [Name]:@AccountExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@DontExpiresFlag [Value]:False [Type]:Boolean    
+      [Name]:@Dn [Value]: [Type]:String    
+      [Name]:@TenantId [Value]:1300000000001 [Type]:Int64    
+      [Name]:@Id [Value]:697952816345157 [Type]:Int64    
+      
+            
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      SqlSugar.SqlSugarException: Column 'UserName' cannot be null
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:17:23.2937026 +08:00 Tuesday L System.Logging.UnitOfWork[0] #44 '00-c65bdbe9f85308a094aa44d9d97a548e-c23bf5f41776fa54-00'
+      [Furion.Pure.dll] async Task Furion.DatabaseAccessor.UnitOfWorkAttribute.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+      [Database Transaction] Transaction rolled back due to an error.      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fail: 2025-07-15 15:17:23.4073636 +08:00 Tuesday L System.Logging.LoggingMonitor[0] #44 '00-c65bdbe9f85308a094aa44d9d97a548e-c23bf5f41776fa54-00'
+      [Furion.Pure.dll] async Task LoggingMonitorAttribute.MonitorAsync(MethodInfo actionMethod, IDictionary<string, object> parameterValues, FilterContext context, dynamic next)
+      ┏━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━
+      ┣ Admin.NET.Core.Service.SysUserService.AddUser
+      ┣ 
+      ┣ 控制器名称：                     SysUserService
+      ┣ 操作名称：                       AddUser
+      ┣ 显示名称：                       增加用户
+      ┣ 路由信息：                       [area]: ; [controller]: sysUser; [action]: add
+      ┣ 请求方式：                       POST
+      ┣ 请求地址：                       http://localhost:5005/api/sysUser/add
+      ┣ HTTP 协议：                      HTTP/1.1
+      ┣ 来源地址：                       http://localhost:8888/
+      ┣ 请求端源：                       client
+      ┣ 浏览器标识：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ 客户端区域语言：                 zh-cn
+      ┣ 客户端 IP 地址：                 0.0.0.1
+      ┣ 客户端源端口：                   60146
+      ┣ 服务端 IP 地址：                 0.0.0.1
+      ┣ 服务端源端口：                   5005
+      ┣ 客户端连接 ID：                  00-c65bdbe9f85308a094aa44d9d97a548e-c23bf5f41776fa54-00
+      ┣ 服务线程 ID：                    #40
+      ┣ 执行耗时：                       56730ms
+      ┣ ━━━━━━━━━━━━━━━  Cookies ━━━━━━━━━━━━━━━
+      ┣ 请求端：                         
+      ┣ 响应端：                         
+      ┣ ━━━━━━━━━━━━━━━  系统信息 ━━━━━━━━━━━━━━━
+      ┣ 系统名称：                       Microsoft Windows 10.0.22631
+      ┣ 系统架构：                       X64
+      ┣ 基础框架：                       Furion.Pure v4.9.7.93
+      ┣ .NET 架构：                      .NET 8.0.17
+      ┣ ━━━━━━━━━━━━━━━  启动信息 ━━━━━━━━━━━━━━━
+      ┣ Web 启动地址：                   http://[::]:5005
+      ┣ 运行环境：                       Development
+      ┣ 启动程序集：                     Admin.NET.Web.Entry
+      ┣ 进程名称：                       Admin.NET.Web.Entry
+      ┣ 托管程序：                       Kestrel
+      ┣ ━━━━━━━━━━━━━━━  授权信息 ━━━━━━━━━━━━━━━
+      ┣ JWT Token：                      Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ 
+      ┣ UserId (integer64)：             1300000000101
+      ┣ TenantId (integer64)：           1300000000001
+      ┣ Account (string)：               superadmin
+      ┣ RealName (string)：              超级管理员
+      ┣ AccountType (integer32)：        999
+      ┣ OrgId (integer32)：              0
+      ┣ OrgName (JSON_NULL)：            
+      ┣ OrgType (JSON_NULL)：            
+      ┣ iat (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ nbf (integer64)：                1752563398 (2025-07-15 15:09:58:0000(+08:00) Tuesday L)
+      ┣ exp (integer64)：                1753168198 (2025-07-22 15:09:58:0000(+08:00) Tuesday L)
+      ┣ iss (string)：                   Admin.NET
+      ┣ aud (string)：                   Admin.NET
+      ┣ ━━━━━━━━━━━━━━━  请求头信息 ━━━━━━━━━━━━━━━
+      ┣ 
+      ┣ Accept：                         application/json, text/plain, */*
+      ┣ Connection：                     keep-alive
+      ┣ Host：                           localhost:5005
+      ┣ User-Agent：                     Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+      ┣ Accept-Encoding：                gzip, deflate, br, zstd
+      ┣ Accept-Language：                zh-cn
+      ┣ Authorization：                  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEzMDAwMDAwMDAxMDEsIlRlbmFudElkIjoxMzAwMDAwMDAwMDAxLCJBY2NvdW50Ijoic3VwZXJhZG1pbiIsIlJlYWxOYW1lIjoi6LaF57qn566h55CG5ZGYIiwiQWNjb3VudFR5cGUiOjk5OSwiT3JnSWQiOjAsIk9yZ05hbWUiOm51bGwsIk9yZ1R5cGUiOm51bGwsImlhdCI6MTc1MjU2MzM5OCwibmJmIjoxNzUyNTYzMzk4LCJleHAiOjE3NTMxNjgxOTgsImlzcyI6IkFkbWluLk5FVCIsImF1ZCI6IkFkbWluLk5FVCJ9.Km9zKaBPQ8UQFDfcbrnj561R37mX2yuuGf7rCwH4_vw
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ Origin：                         http://localhost:8888
+      ┣ Referer：                        http://localhost:8888/
+      ┣ Content-Length：                 549
+      ┣ sec-ch-ua-platform：             "Windows"
+      ┣ sec-ch-ua：                      "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+      ┣ sec-ch-ua-mobile：               ?0
+      ┣ Sec-Fetch-Site：                 same-site
+      ┣ Sec-Fetch-Mode：                 cors
+      ┣ Sec-Fetch-Dest：                 empty
+      ┣ ━━━━━━━━━━━━━━━  参数列表 ━━━━━━━━━━━━━━━
+      ┣ Content-Type：                   application/json-patch+json
+      ┣ 
+      ┣ input (AddUserInput)：           {"account":"jinxueli","realName":"金雪丽","domainAccount":"345345","roleIdList":null,"extOrgIdList":[],"nickName":"铜学历","avatar":null,"sex":1,"age":22,"birthday":"2000-01-01T00:00:00+08:00","nation":"4","phone":"1299281922","cardType":0,"idCardNum":"388282833222919111","email":"2698997479@qq.com","address":"12313123","cultureLevel":5,"politicalOutlook":"123123","college":"123123","officePhone":"19299182922","emergencyContact":"123123","emergencyPhone":"19288122211","emergencyAddress":null,"introduction":null,"orderNo":100,"status":1,"remark":null,"accountType":777,"sysOrg":null,"managerUserId":null,"posId":1300000000108,"jobNum":"009","posLevel":null,"posTitle":null,"expertise":null,"officeZone":null,"office":null,"joinDate":"2025-07-03T00:00:00+08:00","lastLoginIp":null,"lastLoginAddress":null,"lastLoginTime":null,"lastLoginDevice":null,"signature":null,"tenantId":null,"orgId":1300000000004,"createTime":"0001-01-01T00:00:00","updateTime":null,"createUserId":null,"createUserName":null,"updateUserId":null,"updateUserName":null,"id":697952644661317}
+      ┣ ━━━━━━━━━━━━━━━  返回信息 ━━━━━━━━━━━━━━━
+      ┣ HTTP响应状态码：                 200
+      ┣ 原始类型：                       System.Threading.Tasks.Task<System.Int64>
+      ┣ 最终类型：                       
+      ┣ 最终返回值：                     null
+      ┣ ━━━━━━━━━━━━━━━  异常信息 ━━━━━━━━━━━━━━━
+      ┣ 类型：                           MySqlConnector.MySqlException
+      ┣ 消息：                           Column 'UserName' cannot be null
+      ┣ 错误堆栈：                       at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ┗━━━━━━━━━━━  Logging Monitor ━━━━━━━━━━━      
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      MySqlConnector.MySqlException (0x80004005): Column 'UserName' cannot be null
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.MySqlProvider.ExecuteCommandAsync(String sql, SugarParameter[] parameters)
+         at SqlSugar.InsertableProvider`1.ExecuteCommandAsync()
+         at SqlSugar.SimpleClient`1.InsertAsync(T insertObj)
+         at Admin.NET.Core.Service.SysUserLdapService.AddUserLdap(Int64 tenantId, Int64 userId, String account, String domainAccount) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserLdapService.cs:line 54
+         at Admin.NET.Core.Service.SysUserService.AddUser(AddUserInput input) in D:\开发项目\Admin.NET\Admin.NET\Admin.NET.Core\Service\User\SysUserService.cs:line 115
+         at lambda_method124(Closure, Object)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+      ++++++++++++++++++++++++++++++++++++++++++++++++++++++++

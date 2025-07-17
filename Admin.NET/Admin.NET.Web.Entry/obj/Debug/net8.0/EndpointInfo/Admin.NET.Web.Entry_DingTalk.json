@@ -1,0 +1,1244 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "钉钉开放平台",
+    "description": "集成钉钉开放平台<br/><u><b><font color='FF0000'> 👮不得利用本项目从事危害国家安全、扰乱社会秩序、侵犯他人合法权益等法律法规禁止的活动！任何基于本项目二次开发而产生的一切法律纠纷和责任，我们不承担任何责任！</font></b></u>",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/dingTalk/dingTalkToken": {
+      "get": {
+        "tags": [
+          "dingTalk"
+        ],
+        "summary": "获取企业内部应用的access_token",
+        "operationId": "api-dingTalk-dingTalkToken-Get",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_GetDingTalkTokenOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_GetDingTalkTokenOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_GetDingTalkTokenOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dingTalk/dingTalkCurrentEmployeesList/{access_token}": {
+      "post": {
+        "tags": [
+          "dingTalk"
+        ],
+        "summary": "获取在职员工列表 🔖",
+        "operationId": "api-dingTalk-dingTalkCurrentEmployeesList-access_token-Post",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesListInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesListInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesListInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesListInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesListInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkBaseResponse_GetDingTalkCurrentEmployeesListOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkBaseResponse_GetDingTalkCurrentEmployeesListOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkBaseResponse_GetDingTalkCurrentEmployeesListOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dingTalk/dingTalkCurrentEmployeesRosterList/{access_token}": {
+      "post": {
+        "tags": [
+          "dingTalk"
+        ],
+        "summary": "获取员工花名册字段信息 🔖",
+        "operationId": "api-dingTalk-dingTalkCurrentEmployeesRosterList-access_token-Post",
+        "parameters": [
+          {
+            "name": "access_token",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesRosterListInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesRosterListInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesRosterListInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesRosterListInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesRosterListInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkBaseResponse_List_DingTalkEmpRosterFieldVo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkBaseResponse_List_DingTalkEmpRosterFieldVo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkBaseResponse_List_DingTalkEmpRosterFieldVo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dingTalk/dingTalkSendInteractiveCards/{token}": {
+      "post": {
+        "tags": [
+          "dingTalk"
+        ],
+        "summary": "发送钉钉互动卡片 🔖",
+        "operationId": "api-dingTalk-dingTalkSendInteractiveCards-token-Post",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkSendInteractiveCardsInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkSendInteractiveCardsInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkSendInteractiveCardsInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkSendInteractiveCardsInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkSendInteractiveCardsInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkSendInteractiveCardsOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkSendInteractiveCardsOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkSendInteractiveCardsOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dingTalk/dingTalkCreateAndDeliver/{token}": {
+      "post": {
+        "tags": [
+          "dingTalk"
+        ],
+        "summary": "创建并投放钉钉消息卡片 🔖",
+        "operationId": "api-dingTalk-dingTalkCreateAndDeliver-token-Post",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkCreateAndDeliverInput"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkCreateAndDeliverInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkCreateAndDeliverInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkCreateAndDeliverInput"
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "$ref": "#/components/schemas/DingTalkCreateAndDeliverInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkCreateAndDeliverOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkCreateAndDeliverOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminResult_DingTalkCreateAndDeliverOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AdminResult_DingTalkBaseResponse_GetDingTalkCurrentEmployeesListOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/DingTalkBaseResponse_GetDingTalkCurrentEmployeesListOutput"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time",
+            "example": "2025-07-17 16:03:44"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "AdminResult_DingTalkBaseResponse_List_DingTalkEmpRosterFieldVo": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/DingTalkBaseResponse_List_DingTalkEmpRosterFieldVo"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time",
+            "example": "2025-07-17 16:03:44"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "AdminResult_DingTalkCreateAndDeliverOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/DingTalkCreateAndDeliverOutput"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time",
+            "example": "2025-07-17 16:03:44"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "AdminResult_DingTalkSendInteractiveCardsOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/DingTalkSendInteractiveCardsOutput"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time",
+            "example": "2025-07-17 16:03:44"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "AdminResult_GetDingTalkTokenOutput": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "状态码",
+            "format": "int32"
+          },
+          "type": {
+            "type": "string",
+            "description": "类型success、warning、error",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "错误信息",
+            "nullable": true
+          },
+          "result": {
+            "$ref": "#/components/schemas/GetDingTalkTokenOutput"
+          },
+          "extras": {
+            "additionalProperties": false,
+            "description": "附加数据",
+            "nullable": true
+          },
+          "time": {
+            "type": "string",
+            "description": "时间",
+            "format": "date-time",
+            "example": "2025-07-17 16:03:44"
+          }
+        },
+        "additionalProperties": false,
+        "description": "全局返回结果"
+      },
+      "DingTalkBaseResponse_GetDingTalkCurrentEmployeesListOutput": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "$ref": "#/components/schemas/GetDingTalkCurrentEmployeesListOutput"
+          },
+          "errCode": {
+            "type": "integer",
+            "description": "返回码",
+            "format": "int32"
+          },
+          "errMsg": {
+            "type": "string",
+            "description": "返回码描述。",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否调用成功"
+          },
+          "request_id": {
+            "type": "string",
+            "description": "请求Id",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "钉钉基础响应结果"
+      },
+      "DingTalkBaseResponse_List_DingTalkEmpRosterFieldVo": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DingTalkEmpRosterFieldVo"
+            },
+            "description": "返回结果",
+            "nullable": true
+          },
+          "errCode": {
+            "type": "integer",
+            "description": "返回码",
+            "format": "int32"
+          },
+          "errMsg": {
+            "type": "string",
+            "description": "返回码描述。",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否调用成功"
+          },
+          "request_id": {
+            "type": "string",
+            "description": "请求Id",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "钉钉基础响应结果"
+      },
+      "DingTalkCardData": {
+        "type": "object",
+        "properties": {
+          "cardParamMap": {
+            "$ref": "#/components/schemas/DingTalkCardParamMap"
+          },
+          "cardMediaIdParamMap": {
+            "type": "string",
+            "description": "卡片模板内容替换参数，多媒体类型。",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "卡片公有数据"
+      },
+      "DingTalkCardParamMap": {
+        "type": "object",
+        "properties": {
+          "sys_full_json_obj": {
+            "type": "string",
+            "description": "片模板内容替换参数",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "卡片模板内容替换参数"
+      },
+      "DingTalkConversationTypeEnum": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "description": "钉钉发送的会话类型枚举<br />&nbsp;单聊 SingleChat = 0<br />&nbsp;群聊 GroupChat = 1<br />",
+        "format": "int32"
+      },
+      "DingTalkCreateAndDeliverInput": {
+        "required": [
+          "cardData",
+          "cardTemplateId",
+          "openSpaceId",
+          "outTrackId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "description": "卡片创建者的userId",
+            "nullable": true
+          },
+          "cardTemplateId": {
+            "minLength": 1,
+            "type": "string",
+            "description": "卡片内容模板ID"
+          },
+          "outTrackId": {
+            "minLength": 1,
+            "type": "string",
+            "description": "外部卡片实例Id"
+          },
+          "callbackType": {
+            "type": "string",
+            "description": "卡片回调的类型：STREAM：stream模式 HTTP：http模式",
+            "nullable": true
+          },
+          "callbackRouteKey": {
+            "type": "string",
+            "description": "卡片回调HTTP模式时的路由 Key，用于查询注册的 callbackUrl。",
+            "nullable": true
+          },
+          "cardData": {
+            "$ref": "#/components/schemas/DingTalk_CardData"
+          },
+          "crivateData": {
+            "$ref": "#/components/schemas/PrivateData"
+          },
+          "openDynamicDataConfig": {
+            "$ref": "#/components/schemas/OpenDynamicDataConfig"
+          },
+          "imSingleOpenSpaceModel": {
+            "$ref": "#/components/schemas/OpenSpaceModel"
+          },
+          "imGroupOpenSpaceModel": {
+            "$ref": "#/components/schemas/OpenSpaceModel"
+          },
+          "imRobotOpenSpaceModel": {
+            "$ref": "#/components/schemas/OpenSpaceModel"
+          },
+          "coFeedOpenSpaceModel": {
+            "$ref": "#/components/schemas/OpenSpaceModel"
+          },
+          "topOpenSpaceModel": {
+            "$ref": "#/components/schemas/OpenSpaceModel"
+          },
+          "openSpaceId": {
+            "minLength": 1,
+            "type": "string",
+            "description": "表示场域及其场域id"
+          },
+          "imSingleOpenDeliverModel": {
+            "$ref": "#/components/schemas/DingTalkOpenDeliverModel"
+          },
+          "imGroupOpenDeliverModel": {
+            "$ref": "#/components/schemas/DingTalkOpenDeliverModel"
+          },
+          "imRobotOpenDeliverModel": {
+            "$ref": "#/components/schemas/DingTalkOpenDeliverModel"
+          },
+          "topOpenDeliverModel": {
+            "$ref": "#/components/schemas/DingTalkOpenDeliverModel"
+          },
+          "coFeedOpenDeliverModel": {
+            "$ref": "#/components/schemas/DingTalkOpenDeliverModel"
+          },
+          "docOpenDeliverModel": {
+            "$ref": "#/components/schemas/DingTalkOpenDeliverModel"
+          },
+          "userIdType": {
+            "type": "integer",
+            "description": "用户userId类型:1（默认）：userId模式 2：unionId模式",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalkCreateAndDeliverOutput": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "description": "返回结果"
+          },
+          "result": {
+            "$ref": "#/components/schemas/DingTalkCreateAndDeliverResult"
+          },
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "requestid": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalkCreateAndDeliverResult": {
+        "type": "object",
+        "properties": {
+          "processQueryKey": {
+            "type": "string",
+            "description": "用于业务方后续查看已读列表的查询key",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalkEmpFieldDataVo": {
+        "type": "object",
+        "properties": {
+          "field_name": {
+            "type": "string",
+            "description": "字段名称",
+            "nullable": true
+          },
+          "field_code": {
+            "type": "string",
+            "description": "字段标识",
+            "nullable": true
+          },
+          "group_id": {
+            "type": "string",
+            "description": "分组标识",
+            "nullable": true
+          },
+          "field_value_list": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DingTalkFieldValueVo"
+            },
+            "description": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalkEmpRosterFieldVo": {
+        "type": "object",
+        "properties": {
+          "corp_id": {
+            "type": "string",
+            "description": "企业的corpid",
+            "nullable": true
+          },
+          "field_data_list": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DingTalkEmpFieldDataVo"
+            },
+            "description": "返回的字段信息列表",
+            "nullable": true
+          },
+          "userid": {
+            "type": "string",
+            "description": "员工的userid",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalkFieldValueVo": {
+        "type": "object",
+        "properties": {
+          "item_index": {
+            "type": "integer",
+            "description": "第几条的明细标识，下标从0开始",
+            "format": "int32"
+          },
+          "label": {
+            "type": "string",
+            "description": "字段展示值，选项类型字段对应选项的value",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "description": "字段取值，选项类型字段对应选项的key",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalkOpenDeliverModel": {
+        "type": "object",
+        "properties": {
+          "robotCode": {
+            "type": "string",
+            "description": "用于发送卡片的机器人编码。",
+            "nullable": true
+          },
+          "atUserIds": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "nullable": true
+            },
+            "description": "消息@人。格式：{\"key\":\"value\"}。key：用户的userId value：用户名",
+            "nullable": true
+          },
+          "recipients": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "指定接收人的userId。",
+            "nullable": true
+          },
+          "extension": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "nullable": true
+            },
+            "description": "扩展字段，示例如下：{\"key\":\"value\"}",
+            "nullable": true
+          },
+          "spaceType": {
+            "type": "string",
+            "description": "IM机器人单聊若未设置其他投放属性，需设置spaeType为IM_ROBOT。",
+            "nullable": true
+          },
+          "expiredTimeMillis": {
+            "type": "integer",
+            "description": "过期时间戳。若使用topOpenDeliverModel对象，则该字段必填。",
+            "format": "int64"
+          },
+          "userIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "可以查看该吊顶卡片的userId。",
+            "nullable": true
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "可以查看该吊顶卡片的设备：android｜ios｜win｜mac。",
+            "nullable": true
+          },
+          "bizTag": {
+            "type": "string",
+            "description": "业务标识。",
+            "nullable": true
+          },
+          "gmtTimeLine": {
+            "type": "integer",
+            "description": "协作场域下的排序时间。",
+            "format": "int64"
+          },
+          "userId": {
+            "type": "string",
+            "description": "员工userId信息",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalkSendInteractiveCardsInput": {
+        "required": [
+          "cardData",
+          "cardTemplateId",
+          "conversationType",
+          "outTrackId",
+          "receiverUserIdList"
+        ],
+        "type": "object",
+        "properties": {
+          "cardTemplateId": {
+            "minLength": 1,
+            "type": "string",
+            "description": "互动卡片的消息模板Id"
+          },
+          "openConversationId": {
+            "type": "string",
+            "description": "群Id",
+            "nullable": true
+          },
+          "receiverUserIdList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "接收人userId列表"
+          },
+          "outTrackId": {
+            "minLength": 1,
+            "type": "string",
+            "description": "唯一标示卡片的外部编码"
+          },
+          "robotCode": {
+            "type": "string",
+            "description": "机器人的编码",
+            "nullable": true
+          },
+          "conversationType": {
+            "$ref": "#/components/schemas/DingTalkConversationTypeEnum"
+          },
+          "callbackRouteKey": {
+            "type": "string",
+            "description": "卡片回调时的路由Key，用于查询注册的callbackUrl",
+            "nullable": true
+          },
+          "cardData": {
+            "$ref": "#/components/schemas/DingTalkCardData"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalkSendInteractiveCardsOutput": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "description": "返回结果"
+          },
+          "result": {
+            "$ref": "#/components/schemas/DingTalkSendInteractiveCardsResult"
+          }
+        },
+        "additionalProperties": false,
+        "description": "发送钉钉互动卡片返回"
+      },
+      "DingTalkSendInteractiveCardsResult": {
+        "type": "object",
+        "properties": {
+          "processQueryKey": {
+            "type": "string",
+            "description": "用于业务方后续查看已读列表的查询key",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalk_CardData": {
+        "type": "object",
+        "properties": {
+          "cardParamMap": {
+            "$ref": "#/components/schemas/DingTalk_CardParamMap"
+          }
+        },
+        "additionalProperties": false
+      },
+      "DingTalk_CardParamMap": {
+        "type": "object",
+        "properties": {
+          "sys_full_json_obj": {
+            "type": "string",
+            "description": "片模板内容替换参数",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "卡片模板内容替换参数"
+      },
+      "DynamicDataSourceConfig": {
+        "type": "object",
+        "properties": {
+          "dynamicDataSourceId": {
+            "type": "string",
+            "description": "数据源的唯一 ID, 调用方指定。",
+            "nullable": true
+          },
+          "constParams": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "nullable": true
+            },
+            "description": "回调数据源时回传的固定参数。 示例",
+            "nullable": true
+          },
+          "pullConfig": {
+            "$ref": "#/components/schemas/PullConfig"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetDingTalkCurrentEmployeesListInput": {
+        "type": "object",
+        "properties": {
+          "status_list": {
+            "type": "string",
+            "description": "在职员工状态筛选，可以查询多个状态。不同状态之间使用英文逗号分隔。2：试用期、3：正式、5：待离职、-1：无状态",
+            "nullable": true
+          },
+          "offset": {
+            "type": "integer",
+            "description": "分页游标，从0开始。根据返回结果里的next_cursor是否为空来判断是否还有下一页，且再次调用时offset设置成next_cursor的值。",
+            "format": "int32"
+          },
+          "size": {
+            "type": "integer",
+            "description": "分页大小，最大50。",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "获取在职员工列表参数"
+      },
+      "GetDingTalkCurrentEmployeesListOutput": {
+        "type": "object",
+        "properties": {
+          "data_list": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "查询到的员工userId列表",
+            "nullable": true
+          },
+          "next_cursor": {
+            "type": "integer",
+            "description": "下一次分页调用的offset值，当返回结果里没有next_cursor时，表示分页结束。",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetDingTalkCurrentEmployeesRosterListInput": {
+        "type": "object",
+        "properties": {
+          "userid_list": {
+            "type": "string",
+            "description": "员工的userId列表，多个userid之间使用逗号分隔，一次最多支持传100个值。",
+            "nullable": true
+          },
+          "field_filter_list": {
+            "type": "string",
+            "description": "需要获取的花名册字段field_code值列表，多个字段之间使用逗号分隔，一次最多支持传100个值。",
+            "nullable": true
+          },
+          "agentid": {
+            "type": "string",
+            "description": "应用的AgentId",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetDingTalkTokenOutput": {
+        "type": "object",
+        "properties": {
+          "access_token": {
+            "type": "string",
+            "description": "生成的access_token",
+            "nullable": true
+          },
+          "expires_in": {
+            "type": "integer",
+            "description": "access_token的过期时间，单位秒",
+            "format": "int32"
+          },
+          "errMsg": {
+            "type": "string",
+            "description": "返回码描述",
+            "nullable": true
+          },
+          "errCode": {
+            "type": "integer",
+            "description": "返回码",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Notification": {
+        "type": "object",
+        "properties": {
+          "alertContent": {
+            "type": "string",
+            "description": "供消息展示与搜索的字段。",
+            "nullable": true
+          },
+          "notificationOff": {
+            "type": "boolean",
+            "description": "是否关闭推送通知：true：关闭 false：不关闭"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OpenDynamicDataConfig": {
+        "type": "object",
+        "properties": {
+          "dynamicDataSourceConfigs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DynamicDataSourceConfig"
+            },
+            "description": "动态数据源配置列表。",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OpenSpaceModel": {
+        "type": "object",
+        "properties": {
+          "spaceType": {
+            "type": "string",
+            "description": "吊顶场域属性，通过增加spaeType使卡片支持吊顶场域。",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "description": "卡片标题。",
+            "nullable": true
+          },
+          "coolAppCode": {
+            "type": "string",
+            "description": "酷应用编码。",
+            "nullable": true
+          },
+          "supportForward": {
+            "type": "boolean",
+            "description": "是否支持转发, 默认false。",
+            "nullable": true
+          },
+          "lastMessageI18n": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "nullable": true
+            },
+            "description": "支持国际化的LastMessage。",
+            "nullable": true
+          },
+          "searchSupport": {
+            "$ref": "#/components/schemas/SearchSupport"
+          },
+          "notification": {
+            "$ref": "#/components/schemas/Notification"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PrivateData": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/DingTalk_CardParamMap"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PullConfig": {
+        "type": "object",
+        "properties": {
+          "pullStrategy": {
+            "type": "string",
+            "description": "拉取策略，可选值：NONE：不拉取，无动态数据  INTERVAL：间隔拉取ONCE：只拉取一次",
+            "nullable": true
+          },
+          "interval": {
+            "type": "integer",
+            "description": "拉取的间隔时间。",
+            "format": "int32"
+          },
+          "timeUnit": {
+            "type": "string",
+            "description": "拉取的间隔时间的单位， 可选值：SECONDS：秒 MINUTES：分钟 HOURS：小时 DAYS：天",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SearchSupport": {
+        "type": "object",
+        "properties": {
+          "searchIcon": {
+            "type": "string",
+            "description": "类型的icon，供搜索展示使用。",
+            "nullable": true
+          },
+          "searchTypeName": {
+            "type": "string",
+            "description": "卡片类型名。",
+            "nullable": true
+          },
+          "searchDesc": {
+            "type": "string",
+            "description": "供消息展示与搜索的字段。",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme.",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "dingTalk",
+      "description": "钉钉服务 🧩"
+    }
+  ]
+}
