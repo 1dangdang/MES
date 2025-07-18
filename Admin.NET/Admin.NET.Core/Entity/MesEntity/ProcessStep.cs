@@ -19,7 +19,7 @@ namespace Admin.NET.Core.Entity.MesEntity;
 public class ProcessStep
 {
     /// <summary>
-    /// 工序主键Id
+    /// 工序主键Id213231213
     /// </summary>
     public int ProcessStepId { get; set; }
     public string ProcessName { get; set; }   // 工序名称

@@ -19,7 +19,7 @@ namespace Admin.NET.Core.Entity.MesEntity;
 public class WorkShop
 {
     /// <summary>
-    /// 车间管理主键Id
+    /// 车间管理主键Id13212321331
     /// </summary>
     public int WorkShopId { get; set; }
 

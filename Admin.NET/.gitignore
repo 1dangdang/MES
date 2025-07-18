@@ -60,4 +60,4 @@ wwwroot/logs/
 *.mmdb
 
 # Ignore other project-specific files
-charts/
+charts/ 
